@@ -1,0 +1,21 @@
+.hero {
+  position: relative;
+  background: #d6d6d6 url('../../img/backgrounds/hero-background.jpeg') no-repeat center center;
+  background-size: cover;
+  padding: 90px 19px 85px 19px;
+  box-sizing: border-box;
+  &::after {
+    content: "";
+  display: block;
+  width: 1200px;
+  height: 57px;
+  background: url("../../img/icons/hero-bottom-effect.svg") no-repeat;
+  position: absolute;
+  bottom: 0;
+  }
+}
+
+.hero__title {
+display: block;
+margin: 0 auto;
+}
