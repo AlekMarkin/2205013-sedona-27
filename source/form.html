@@ -18,36 +18,27 @@
 
     <!-- Header -->
     <header class="main-header">
-      <div class="main-nav__wrapper">
-        <a class="main-header__logo" href="#">
-          <img class="main-header__logo-img" src="./img/icons/logo/logo-sedona.svg" alt="Герб Седоны." width="186"
-            height="96">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle main-nav__toggle--open" type="button">
-            <span class="visually-hidden">Открыть
-              меню</span></button>
-          <ul class="main-nav__list site-list">
-            <div class="site-list__wrapper">
-              <div class="site-list__wrapper-left-side">
-                <li class="site-list__item">
-                  <a class="site-list__link" href="index.html">Главная</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="gallery.html">Фото и видео</a>
-                </li>
-              </div>
-              <div class="site-list__wrapper-right-side">
-                <li class="site-list__item">
-                  <a class="site-list__link site-list__link--current" href="#">Форма отзыва</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="https://htmlacademy.ru/">Html academy</a>
-                </li>
-              </div>
-            </div>
-          </ul>
-      </div>
+      <a class="main-header__logo" href="#">
+        <img class="main-header__logo-img" src="./img/icons/logo/logo-sedona.svg" alt="Герб Седоны." width="186" height="96">
+      </a>
+      <nav class="main-nav main-nav--nojs main-nav--opened main-nav--closed">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list menu-list">
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="gallery.html">Фото и видео</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link menu-list__link--current" href="#">Форма отзыва</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="https://htmlacademy.ru/">Html academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -58,7 +49,7 @@
       <!-- Hero -->
       <section class="hero-second-type">
         <h2 class="visually-hidden">Sedona</h2>
-        <img class="hero-second-type__title" src="./img/title-hero-second-type@mobile.svg" alt="Sedona">
+        <img class="hero-second-type__title" src="./img/title-hero-second-type.svg" alt="Sedona">
       </section>
 
       <!-- Review-form -->
@@ -242,6 +233,7 @@
       </section>
     </div>
   </div>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
