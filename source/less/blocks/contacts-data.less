@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
   border: none;
+  @media (min-width: @tablet-width) {
+    margin-left: 63px;
+ }
 }
 
 .contacts-data__list {
@@ -17,6 +20,10 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+ }
 }
 
 .contacts-data__item {
@@ -54,4 +61,8 @@
     line-height: 26px;
     text-transform: none;
   }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+ }
 }

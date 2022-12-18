@@ -13,8 +13,14 @@
 .search-hotels__description {
   .font-size-description-style();
   text-align: center;
-  .padding-margin-none-style();
+  padding: 0;
+  margin: 0 auto;
+  display: block;
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 435px;
+    }
 }
 
 .search-hotels__button {

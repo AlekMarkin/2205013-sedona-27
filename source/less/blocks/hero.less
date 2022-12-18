@@ -1,23 +1,41 @@
 .hero {
   position: relative;
-  background: #d6d6d6 url('../../img/backgrounds/hero-background@mobile.jpeg') no-repeat center center;
+  background: #82b3d3 url("../../img/backgrounds/hero-background-mobile@1x.jpeg") no-repeat center center;
   background-size: cover;
   padding: 90px 0 85px 0;
   min-height: 389px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/backgrounds/hero-background-tablet@1x.jpeg");
+    padding: 77px 0 91px 0;
+    min-height: 518px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/backgrounds/hero-background-desktop@1x.jpeg");
+    padding: 78px 0 90px 0;
+  }
+
   &::after {
     content: "";
-  display: none;
-  width: 100%;
-  height: 57px;
-  background: url("../../img/icons/hero-bottom-effect.svg") no-repeat center center;
-  background-size: cover;
-  position: absolute;
-  bottom: 0;
+    width: 100%;
+    height: 57px;
+    background: url("../../img/icons/hero-bottom-effect.svg") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
   }
 }
 
 .hero__title {
-display: block;
-margin: 0 auto;
+  display: block;
+  margin: 0 auto;
+  min-width: 282px;
+  min-height: 214px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 461px;
+    min-height: 350px;
+}
 }
