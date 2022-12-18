@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 63px;
+ }
   }
 
   .personal-data__list {
@@ -15,6 +19,10 @@
     max-width: 295px;
     display: block;
     margin: 0 auto;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 20px;
+   }
   }
 
   .personal-data__item {
@@ -45,4 +53,8 @@
       .font-size-title-style();
       color: #000000;
     }
+
+    @media (min-width: @tablet-width) {
+      margin: 0;
+   }
   }
