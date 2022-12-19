@@ -21,7 +21,7 @@
       <a class="main-header__logo" href="#">
         <img class="main-header__logo-img" src="./img/icons/logo/logo-sedona.svg" alt="Герб Седоны." width="186" height="96">
       </a>
-      <nav class="main-nav main-nav--nojs main-nav--opened main-nav--closed">
+      <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -96,12 +96,12 @@
               <ul class="contacts-data__list">
                 <li class="contacts-data__item">
                   <label class="contacts-data__label" for="phonenumber">Контактный телефон<sup>*</sup>:</label>
-                  <input class="contacts-data__field" type="text" name="phonenumber" placeholder="Введите телефон"
+                  <input class="contacts-data__field contacts-data__field-pnone" type="text" name="phonenumber" placeholder="Введите телефон"
                     id="phonenumber">
                 </li>
                 <li class="contacts-data__item">
                   <label class="contacts-data__label" for="e-mail">Электронная почта<sup>*</sup>:</label>
-                  <input class="contacts-data__field" type="text" name="e-mail" placeholder="Введите e-mail"
+                  <input class="contacts-data__field contacts-data__field-email" type="text" name="e-mail" placeholder="Введите e-mail"
                     id="e-mail">
                 </li>
               </ul>
@@ -111,7 +111,9 @@
             <!-- Impression -->
             <li class="feedback-form__item feedback-form__item-impression">
             <fieldset class="feedback-form__item-fieldset impression">
+              <div class="impression__line line-wrapper">
               <legend class="impression__title">Ваше обшее впечатление:</legend>
+            </div>
               <ul class="impression__list">
                 <li class="impression__item radio">
                   <input class="radio__input visually-hidden" type="radio" name="impression" value="good" id="good" checked>
@@ -132,7 +134,9 @@
             <!-- Visited-sight -->
             <li class="feedback-form__item feedback-form__item-visited-sight">
             <fieldset class="feedback-form__item-fieldset visited-sight">
+              <div class="visited-sight__line line-wrapper">
               <legend class="visited-sight__title">Посещенные достопримечательности:</legend>
+            </div>
               <ul class="visited-sight__list">
                 <li class="visited-sight__item checkbox">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="devilbridge" id="devilbridge" checked>
@@ -156,8 +160,10 @@
 
             <!-- Emotions -->
             <li class="feedback-form__item feedback-form__item-emotions">
-            <fieldset class="feedback-form__item-fieldset emotions">
+              <fieldset class="feedback-form__item-fieldset emotions">
+                <div class="emotions__line line-wrapper">
               <legend class="emotions__title">Опишите свои эмоции:</legend>
+            </div>
               <div class="emotions__field-wrapper">
               <label class="emotions__label visually-hidden" for="fillfield">Опишите свои эмоции</label>
               <textarea class="emotions__field" type="text" name="fillfield" id="fillfield" placeholder="Опишите подробно все свои восторги"></textarea>

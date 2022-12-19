@@ -2,7 +2,8 @@
   padding: 0;
   margin: 0;
   border: none;
-}
+
+ }
 
 .impression__title {
   font-family: "PT Sans", Arial, sans-serif;
@@ -10,9 +11,13 @@
   .font-size-title-style();
   text-align:center;
   max-width: 295px;
-  display: block;
+  display: inline-block;
   margin: 0 auto;
-  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 60px;
+    background-color: #ffffff;
+      }
 }
 
 .impression__list {
