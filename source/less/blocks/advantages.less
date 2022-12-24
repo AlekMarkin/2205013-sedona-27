@@ -9,8 +9,11 @@
     min-width: 768px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    background-color: #eeeeee;
    }
  }
+
+
 
 .advantages__item-title {
   .font-size-title-style();
@@ -38,6 +41,8 @@
   margin: 0 auto;
   max-width: 284px;
   }
+
+
 
 .advantages__item-img {
   display: block;
@@ -76,9 +81,6 @@
 }
 }
 
-
-
-
 .advantages__item--first-type .advantages__item-title {
   padding-top: 37px;
 
@@ -97,11 +99,12 @@ padding-bottom: 37px;
    }
 }
 
-.advantages__item--second-type {
+ .advantages__item--second-type {
   background-color: #eeeeee;
   padding-top: 24px;
   padding-bottom: 24px;
   position: relative;
+  align-self: center;
 
   @media (max-width: @mobile-width-only){
     &:not(:last-child)::after {
@@ -127,4 +130,9 @@ padding-bottom: 37px;
   @media (min-width: @tablet-width) {
     max-width: 190px;
     }
+}
+
+.advantages__item--second-type .advantages__item-description--road {
+  max-width: 183px;
+
 }

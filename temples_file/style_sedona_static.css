@@ -282,7 +282,8 @@ input:disabled {
 .title-hero {
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;left: 25%;
+  width: 50%;
 }
 
 .advantages-main-idea {
