@@ -9,6 +9,18 @@
     position: relative;
     padding-top: 11px;
     cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 46px;
+      height: 46px;
+      display: block;
+      background: #F2F2F2;
+      top: 0;
+      left: 0;
+  }
+
     &::after {
     content: "";
     position: absolute;
@@ -20,17 +32,34 @@
     left: 13px;
     display: none;
     }
-    &::before {
-      content: "";
-      position: absolute;
-      width: 46px;
-      height: 46px;
-      display: block;
-      background: #F2F2F2;
-      top: 0;
-      left: 0;
+
+  &:hover::before {
+    background: #e5e5e5;
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 }
+
+.checkbox__label:active::before {
+  background: #3333334d;
+}
+
+.checkbox__input[type="checkbox"]:focus+.checkbox__label {
+
+  &::before {
+    background: #e5e5e5;
+  }
+}
+
+.checkbox__input[type="checkbox"]:active+.checkbox__label {
+
+  &::before {
+    background: #d5d5d5;
+  }
+}
+
 .checkbox__input:checked + .checkbox__label::after {
   display: block;
 }
