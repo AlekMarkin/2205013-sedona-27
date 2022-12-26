@@ -70,14 +70,21 @@
 
 .gallery__item-img {
   display: block;
-  min-height: 260px;
+  min-height: 280px;
   width: 100%;
   margin-bottom: 15px;
+  object-fit: cover;
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    max-height: 267px;
   }
+}
 
+.gallery__item-img--main {
+  @media (min-width: @tablet-width) {
+    min-height: 400px;
+  }
 }
 
 .gallery__item-description {
