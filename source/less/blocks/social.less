@@ -1,19 +1,31 @@
 .social__list {
-  display: flex;
-  flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-columns: 48px 48px 48px;
+  gap: 6px;
+
+  @media (min-width: @tablet-width) {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 }
 
 .social__item {
   background-color: @bg-color-first-type;
-  margin-right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 3px;
+  @media (min-width: @tablet-width) {
+    margin-right: 8px;
+  }
+
 
   &:hover {
     background-color: #669ec0;

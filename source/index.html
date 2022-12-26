@@ -9,8 +9,10 @@
     content="Приезжайте в Седону и вы забудете, что такое Гранд-Каньон.Подробности на нашем сайте.">
   <meta name="Keywords" content="каталог гостиниц, отдых, путешествие, Седона, Гранд-Каньон ">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/favicon-180.png">
+  <link rel="manifest" href="../manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -19,7 +21,8 @@
     <!-- Header -->
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <img class="main-header__logo-img" src="./img/icons/logo/logo-sedona.svg" alt="Герб Седоны." width="186" height="96">
+        <img class="main-header__logo-img" src="./img/icons/logo/logo-sedona.svg" alt="Герб Седоны." width="186"
+          height="96">
       </a>
       <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -49,7 +52,7 @@
       <!-- Hero -->
       <section class="hero">
         <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-        <img class="hero__title" src="./img/title-hero.svg"
+        <img class="hero__title" src="./img/title-hero.svg" width="282" height="284"
           alt="Welcome to the gorgeouse Sedona Because the Grand Canyon sucks. ">
       </section>
 
@@ -67,8 +70,8 @@
 
             <div class="advantages__item-wrapper">
               <h3 class="advantages__item-title">Настоящий городок</h3>
-              <p class="advantages__item-number">-№1-</p>
-              <p class="advantages__item-description">Седона — не аттракцион для
+              <p class="advantages__item-number">— №1 —</p>
+              <p class="advantages__item-description">Седона не аттракцион для
                 туристов, там течёт своя жизнь</p>
             </div>
 
@@ -82,61 +85,62 @@
                   srcset="./img/content/sedona-real-city-mobile@2x.jpeg 2x" alt="Вид Седоны, настоящего города.">
               </picture>
             </div>
-         <ul class="advantages__item-list recomendation-list">
-          <li class="recomendation-list__item recomendation-list__item-house">
-              <h3 class="recomendation-list__title">Жилье</h3>
-              <p class="recomendation-list__description">Рекомендуем пожить в
-                настоящем мотеле, все как в кино!</p>
-          </li>
-          <li class="recomendation-list__item recomendation-list__item-food">
-              <h3 class="recomendation-list__title">Еда</h3>
-              <p class="recomendation-list__description">Всегда заказывайте
-                фирменный бургер, Вы не разочаруетесь!</p>
-           </li>
-          <li class="recomendation-list__item recomendation-list__item-souvenirs">
-              <h3 class="recomendation-list__title">Сувениры</h3>
-              <p class="recomendation-list__description">Не только китайского, но
-                и местного производства!</p>
+            <ul class="advantages__item-list recomendation-list">
+              <li class="recomendation-list__item recomendation-list__item-house">
+                <h3 class="recomendation-list__title">Жилье</h3>
+                <p class="recomendation-list__description">Рекомендуем пожить в
+                  настоящем мотеле, все как в кино!</p>
               </li>
-        </ul>
-      </li>
-          <li class="advantages__item advantages__item--first-type advantages__item-first-type--reverse ">
-               <div class="advantages__item-img-wrapper">
-                <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./img/content/devil-bridge-desktop@1x.jpeg 1x, ./img/content/devil-bridge-desktop@2x.jpeg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="./img/content/devil-bridge-tablet@1x.jpeg 1x, ./img/content/devil-bridge-tablet@2x.jpeg.jpeg 2x">
-                  <img class="advantages__item-img" src="./img/content/devil-bridge-mobile@1x.jpeg"
-                    srcset="./img/content/devil-bridge-mobile@2x.jpeg 2x" alt="Мост дьявола.">
-                </picture>
-                 </div>
-            <div class="advantages__item-wrapper">
-              <h3 class="advantages__item-title">Там есть мост дьявола</h3>
-              <p class="advantages__item-number">-№2-</p>
-              <p class="advantages__item-description">Да, по нему можно<br> пройти!
-                Если вы осмелитесь, конечно</p>
-            </div>
+              <li class="recomendation-list__item recomendation-list__item-food">
+                <h3 class="recomendation-list__title">Еда</h3>
+                <p class="recomendation-list__description">Всегда заказывайте
+                  фирменный бургер, Вы не разочаруетесь!</p>
+              </li>
+              <li class="recomendation-list__item recomendation-list__item-souvenirs">
+                <h3 class="recomendation-list__title">Сувениры</h3>
+                <p class="recomendation-list__description">Не только китайского, но
+                  и местного производства!</p>
+              </li>
+            </ul>
           </li>
+          <li class="advantages__item advantages__item--first-type advantages__item-first-type--reverse ">
+
+              <div class="advantages__item-wrapper">
+                <h3 class="advantages__item-title">Там есть мост дьявола</h3>
+                <p class="advantages__item-number">— №2 —</p>
+                <p class="advantages__item-description">Да, по нему можно пройти!
+                  Если вы осмелитесь, конечно</p>
+              </div>
+              <div class="advantages__item-img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./img/content/devil-bridge-desktop@1x.jpeg 1x, ./img/content/devil-bridge-desktop@2x.jpeg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/content/devil-bridge-tablet@1x.jpeg 1x, ./img/content/devil-bridge-tablet@2x.jpeg.jpeg 2x">
+                <img class="advantages__item-img" src="./img/content/devil-bridge-mobile@1x.jpeg"
+                  srcset="./img/content/devil-bridge-mobile@2x.jpeg 2x" alt="Мост дьявола.">
+              </picture>
+            </div>
+            </li>
 
           <li class="advantages__item advantages__item--second-type">
 
-              <h3 class="advantages__item-title">Небольшая площадь</h3>
-              <p class="advantages__item-number">-№3-</p>
-              <p class="advantages__item-description">Все интересные места находятся очень близко</p>
+            <h3 class="advantages__item-title">Небольшая площадь</h3>
+            <p class="advantages__item-number">— №3 —</p>
+            <p class="advantages__item-description">Все интересные места находятся очень близко</p>
 
           </li>
           <li class="advantages__item advantages__item--second-type">
             <div class="advantages__item-wrapper">
               <h3 class="advantages__item-title">Красивая дорога</h3>
-              <p class="advantages__item-number">-№4-</p>
-              <p class="advantages__item-description advantages__item-description--road">Ехать в Седону из Лас-Вегаса совсем не сукучно!</p>
+              <p class="advantages__item-number">— №4 —</p>
+              <p class="advantages__item-description advantages__item-description--road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
           <li class="advantages__item advantages__item--second-type">
             <div class="advantages__item-wrapper">
               <h3 class="advantages__item-title">Мало туристов</h3>
-              <p class="advantages__item-number">-№5-</p>
+              <p class="advantages__item-number">— №5 —</p>
               <p class="advantages__item-description">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </li>
