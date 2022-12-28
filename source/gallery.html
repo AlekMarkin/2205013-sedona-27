@@ -18,211 +18,238 @@
 <body class="page__body">
   <div class="page__container">
 
-  <!-- Header -->
-  <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <img class="main-header__logo-img" src="./img/icons/logo/logo-sedona.svg" alt="Герб Седоны." width="186" height="96">
-    </a>
-    <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list menu-list">
-        <li class="menu-list__item">
-          <a class="menu-list__link " href="index.html">Главная</a>
-        </li>
-        <li class="menu-list__item">
-          <a class="menu-list__link menu-list__link--current" href="#">Фото и видео</a>
-        </li>
-        <li class="menu-list__item">
-          <a class="menu-list__link" href="form.html">Форма отзыва</a>
-        </li>
-        <li class="menu-list__item">
-          <a class="menu-list__link" href="https://htmlacademy.ru/">Html academy</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Main -->
-  <main class="main-container main-gallery">
-    <h1 class="visually-hidden">Галерея Седоны</h1>
-
-    <!-- Hero -->
-    <section class="hero-second-type">
-      <h2 class="visually-hidden">Sedona</h2>
-      <img class="hero-second-type__title" src="./img/title-hero-second-type.svg" alt="Sedona">
-    </section>
-
-    <!-- Gallery -->
-    <div class="gallery-container">
-    <section class="gallery">
-            <header class="gallery__header section-header">
-          <h2 class="gallery__header-title section-header__title">Фото и видео</h2>
-          <p class="section-header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
-            политике и экономике.</p>
-      </header>
-      <ul class="gallery__list">
-        <li class="gallery__item">
-          <div class="gallery__item-wrapper">
-            <a class="gallery__item-link" href="#">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="./img/gallery/unnative-spaces-desktop@1x.jpeg 1x, ./img/gallery/unnative-spaces-desktop@2x.jpeg 2x">
-                <source media="(min-width: 768px)" srcset="./img/gallery/unnative-spaces-tablet@1x.jpeg 1x, ./img/gallery/unnative-spaces-tablet@2x.jpeg 2x">
-                <img class="gallery__item-img gallery__item-img--main" src="./img/gallery/unnative-spaces-mobile@1x.jpeg" width="280" height="280" srcset="./img/gallery/unnative-spaces-mobile@2x.jpeg 2x" alt="Уходящая в закат дорога на фоне бескрайних просторов">
-              </picture>
-              </a>
-              <div class="gallery__item-description">
-                <div class="gallery__item-title-wrapper">
-            <h3 class="gallery__item-title">Неродные просторы</h3>
-            <div class="gallery__item-author-wrapper">
-              <p class="gallery__item-author">Автор:</p>
-              <b class="gallery__item-author-name">Борис</b>
-            </div>
-          </div>
-            <div class="gallery__item-like-wrapper">
-              <button class="gallery__item-like" type="button"><span class="visually-hidden">Поставить лайк</span></button>
-              <b class="gallery__item-quantity-of-like">1350</b>
-            </div>
-          </div>
-          </div>
-        </li>
-
-        <li class="gallery__item">
-          <div class="gallery__item-wrapper">
-            <a class="gallery__item-link" href="#">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="./img/gallery/local-vegetation-desktop@1x.jpeg 1x, ./img/gallery/local-vegetation-desktop@2x.jpeg 2x">
-                <source media="(min-width: 768px)" srcset="./img/gallery/local-vegetation-tablet@1x.jpeg 1x, ./img/gallery/local-vegetation-tablet@2x.jpeg 2x">
-                <img class="gallery__item-img" src="./img/gallery/local-vegetation-mobile@1x.jpeg" width="280" height="280" srcset="local-vegetation-mobile@2x.jpeg 2x" alt="Уникальный кактус, растущий только в Седоне">
-              </picture>
-              </a>
-              <div class="gallery__item-description">
-              <div class="gallery__item-title-wrapper">
-            <h3 class="gallery__item-title">Местная растительность</h3>
-            <div class="gallery__item-author-wrapper">
-              <p class="gallery__item-author">Автор:</p>
-              <b class="gallery__item-author-name">Сергей</b>
-            </div>
-          </div>
-            <div class="gallery__item-like-wrapper">
-              <button class="gallery__item-like" type="button"><span class="visually-hidden">Поставить
-                  лайк</span></button>
-              <b class="gallery__item-quantity-of-like">143</b>
-            </div>
-          </div>
-          </div>
-        </li>
-
-        <li class="gallery__item">
-          <div class="gallery__item-wrapper">
-            <a class="gallery__item-link" href="#">
-              <picture>
-              <source media="(min-width: 1200px)" srcset="./img/gallery/road-to-north-desktop@1x.jpeg 1x, ./img/gallery/road-to-north-desktop@2x.jpeg 2x">
-              <source media="(min-width: 768px)" srcset="./img/gallery/road-to-north-tablet@1x.jpeg 1x, ./img/gallery/road-to-north-tablet@2x.jpeg 2x">
-              <img class="gallery__item-img" src="./img/gallery/road-to-north-mobile@1x.jpeg" width="280" height="280" srcset="./img/gallery/road-to-north-mobile@2x.jpeg 2x" alt="Природный мост между горами">
-            </picture>
-          </a>
-          <div class="gallery__item-description gallery__item-description--second-type-bg">
-            <div class="gallery__item-title-wrapper">
-            <h3 class="gallery__item-title">Дорога на Север</h3>
-            <div class="gallery__item-author-wrapper">
-              <p class="gallery__item-author">Автор:</p>
-              <b class="gallery__item-author-name">Петр</b>
-            </div>
-            </div>
-            <div class="gallery__item-like-wrapper">
-              <button class="gallery__item-like" type="button"><span class="visually-hidden">Поставить
-                  лайк</span></button>
-              <b class="gallery__item-quantity-of-like">96</b>
-            </div>
-          </div>
-          </div>
-        </li>
-        <li class="gallery__item">
-          <div class="gallery__item-wrapper">
-            <a class="gallery__item-link" href="#">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="./img/gallery/devil-bridge-desktop@1x.jpeg 1x, ./img/gallery/devil-bridge-desktop@2x.jpeg 2x">
-                <source media="(min-width: 768px)" srcset="./img/gallery/devil-bridge-tablet@1x.jpeg 1x, ./img/gallery/devil-bridge-tablet@2x.jpeg 2x">
-                <img class="gallery__item-img" src="./img/gallery/devil-bridge-mobile@1x.jpeg" width="280" height="280" srcset="devil-bridge-mobile@2x.jpeg 2x" alt="Природный мост между горами">
-              </picture>
-              </a>
-              <div class="gallery__item-description">
-                <div class="gallery__item-title-wrapper">
-              <h3 class="gallery__item-title">Мост дьявола</h3>
-            <div class="gallery__item-author-wrapper">
-              <p class="gallery__item-author">Автор:</p>
-              <b class="gallery__item-author-name">Антон</b>
-            </div>
-          </div>
-            <div class="gallery__item-like-wrapper">
-              <button class="gallery__item-like" type="button"><span class="visually-hidden">Поставить
-                  лайк</span></button>
-              <b class="gallery__item-quantity-of-like">254</b>
-            </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Video -->
-    <section class="video">
-      <div class="video__wrapper">
-        <header class="video__header">
-          <h2 class="visually-hidden">Видео о Седоне</h2>
-          <p class="video__header-title">Все еще сомневаетесь?</p>
-          <p class="video__header-description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-            очередной раз!</p>
-        </header>
-        <div class="video__preview">
-          <button class="video__start-play-button"><span class="visually-hidden">Запустить видео</span></button>
-          <video class="video__container" poster="./img/gallery/video-preview-desktop@2x.jpeg"></video>
-           </div>
-      </div>
-    </section>
-  </div>
-  </main>
-
-   <!-- Footer -->
-   <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <div class="main-footer__hashtag">
-        <p class="main-footer__hashtag-title">#Visitsedona</p>
-      </div>
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link-vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Наша группа во Вконтакте.</span>
-            </a>
+    <!-- Header -->
+    <header class="main-header">
+      <a class="main-header__logo" href="#">
+        <img class="main-header__logo-img" src="./img/icons/logo/logo-sedona.svg" alt="Герб Седоны." width="186"
+          height="96">
+      </a>
+      <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list menu-list">
+          <li class="menu-list__item">
+            <a class="menu-list__link " href="index.html">Главная</a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link-telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Наш канал в Телеграм.</span>
-            </a>
+          <li class="menu-list__item">
+            <a class="menu-list__link menu-list__link--current" href="#">Фото и видео</a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link-youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Наш канал на Ютуб.</span>
-            </a>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="https://htmlacademy.ru/">Html academy</a>
           </li>
         </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main-container main-gallery">
+      <h1 class="visually-hidden">Галерея Седоны</h1>
+
+      <!-- Hero -->
+      <section class="hero-second-type">
+        <h2 class="visually-hidden">Sedona</h2>
+        <img class="hero-second-type__title" src="./img/title-hero-second-type.svg" alt="Sedona">
+      </section>
+
+      <!-- Gallery -->
+      <div class="gallery-container">
+        <section class="gallery">
+          <header class="gallery__header section-header">
+            <h2 class="gallery__header-title section-header__title">Фото и видео</h2>
+            <p class="section-header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+              забыть о
+              политике и экономике.</p>
+          </header>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <div class="gallery__item-wrapper">
+                <a class="gallery__item-link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="./img/gallery/unnative-spaces-desktop@1x.webp 1x, ./img/gallery/unnative-spaces-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/gallery/unnative-spaces-tablet@1x.webp 1x, ./img/gallery/unnative-spaces-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="./img/gallery/unnative-spaces-mobile@1x.webp 1x, ./img/gallery/unnative-spaces-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/gallery/unnative-spaces-desktop@1x.jpeg 1x, ./img/gallery/unnative-spaces-desktop@2x.jpeg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="./img/gallery/unnative-spaces-tablet@1x.jpeg 1x, ./img/gallery/unnative-spaces-tablet@2x.jpeg 2x">
+                    <img class="gallery__item-img gallery__item-img--main"
+                      src="./img/gallery/unnative-spaces-mobile@1x.jpeg" width="280" height="280"
+                      srcset="./img/gallery/unnative-spaces-mobile@2x.jpeg 2x"
+                      alt="Уходящая в закат дорога на фоне бескрайних просторов">
+                  </picture>
+                </a>
+                <div class="gallery__item-description">
+                  <div class="gallery__item-title-wrapper">
+                    <h3 class="gallery__item-title">Неродные просторы</h3>
+                    <div class="gallery__item-author-wrapper">
+                      <p class="gallery__item-author">Автор:</p>
+                      <b class="gallery__item-author-name">Борис</b>
+                    </div>
+                  </div>
+                  <div class="gallery__item-like-wrapper">
+                    <button class="gallery__item-like" type="button"><span class="visually-hidden">Поставить
+                        лайк</span></button>
+                    <b class="gallery__item-quantity-of-like">1350</b>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="gallery__item">
+              <div class="gallery__item-wrapper">
+                <a class="gallery__item-link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/gallery/local-vegetation-desktop@1x.jpeg 1x, ./img/gallery/local-vegetation-desktop@2x.jpeg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="./img/gallery/local-vegetation-tablet@1x.jpeg 1x, ./img/gallery/local-vegetation-tablet@2x.jpeg 2x">
+                    <img class="gallery__item-img" src="./img/gallery/local-vegetation-mobile@1x.jpeg" width="280"
+                      height="280" srcset="local-vegetation-mobile@2x.jpeg 2x"
+                      alt="Уникальный кактус, растущий только в Седоне">
+                  </picture>
+                </a>
+                <div class="gallery__item-description">
+                  <div class="gallery__item-title-wrapper">
+                    <h3 class="gallery__item-title">Местная растительность</h3>
+                    <div class="gallery__item-author-wrapper">
+                      <p class="gallery__item-author">Автор:</p>
+                      <b class="gallery__item-author-name">Сергей</b>
+                    </div>
+                  </div>
+                  <div class="gallery__item-like-wrapper">
+                    <button class="gallery__item-like" type="button"><span class="visually-hidden">Поставить
+                        лайк</span></button>
+                    <b class="gallery__item-quantity-of-like">143</b>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="gallery__item">
+              <div class="gallery__item-wrapper">
+                <a class="gallery__item-link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/gallery/road-to-north-desktop@1x.jpeg 1x, ./img/gallery/road-to-north-desktop@2x.jpeg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="./img/gallery/road-to-north-tablet@1x.jpeg 1x, ./img/gallery/road-to-north-tablet@2x.jpeg 2x">
+                    <img class="gallery__item-img" src="./img/gallery/road-to-north-mobile@1x.jpeg" width="280"
+                      height="280" srcset="./img/gallery/road-to-north-mobile@2x.jpeg 2x"
+                      alt="Природный мост между горами">
+                  </picture>
+                </a>
+                <div class="gallery__item-description gallery__item-description--second-type-bg">
+                  <div class="gallery__item-title-wrapper">
+                    <h3 class="gallery__item-title">Дорога на Север</h3>
+                    <div class="gallery__item-author-wrapper">
+                      <p class="gallery__item-author">Автор:</p>
+                      <b class="gallery__item-author-name">Петр</b>
+                    </div>
+                  </div>
+                  <div class="gallery__item-like-wrapper">
+                    <button class="gallery__item-like" type="button"><span class="visually-hidden">Поставить
+                        лайк</span></button>
+                    <b class="gallery__item-quantity-of-like">96</b>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <div class="gallery__item-wrapper">
+                <a class="gallery__item-link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/gallery/devil-bridge-desktop@1x.jpeg 1x, ./img/gallery/devil-bridge-desktop@2x.jpeg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="./img/gallery/devil-bridge-tablet@1x.jpeg 1x, ./img/gallery/devil-bridge-tablet@2x.jpeg 2x">
+                    <img class="gallery__item-img" src="./img/gallery/devil-bridge-mobile@1x.jpeg" width="280"
+                      height="280" srcset="devil-bridge-mobile@2x.jpeg 2x" alt="Природный мост между горами">
+                  </picture>
+                </a>
+                <div class="gallery__item-description">
+                  <div class="gallery__item-title-wrapper">
+                    <h3 class="gallery__item-title">Мост дьявола</h3>
+                    <div class="gallery__item-author-wrapper">
+                      <p class="gallery__item-author">Автор:</p>
+                      <b class="gallery__item-author-name">Антон</b>
+                    </div>
+                  </div>
+                  <div class="gallery__item-like-wrapper">
+                    <button class="gallery__item-like" type="button"><span class="visually-hidden">Поставить
+                        лайк</span></button>
+                    <b class="gallery__item-quantity-of-like">254</b>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Video -->
+        <section class="video">
+          <div class="video__wrapper">
+            <header class="video__header">
+              <h2 class="visually-hidden">Видео о Седоне</h2>
+              <p class="video__header-title">Все еще сомневаетесь?</p>
+              <p class="video__header-description">Смотрите видеопрезентацию и скорее за билетами, пока они не
+                подорожали в
+                очередной раз!</p>
+            </header>
+            <div class="video__preview">
+              <button class="video__start-play-button"><span class="visually-hidden">Запустить видео</span></button>
+              <video class="video__container" poster="./img/gallery/video-preview-desktop@2x.jpeg"></video>
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="main-footer__copyright">
-        <a class="main-footer__copyright-link" id="copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><b
-            class="main-footer__copyright-text">Разработано</b>
-          <svg width="27" height="35" viewBox="0 0 27 35" aria-hidden="true" role="img"
-            aria-label="Логотип htmlacademy.">
-            <path fill="currentcolor"
-              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
-          </svg>
-        </a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__hashtag">
+          <p class="main-footer__hashtag-title">#Visitsedona</p>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link-vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Наша группа во Вконтакте.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link-telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Наш канал в Телеграм.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Наш канал на Ютуб.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright">
+          <a class="main-footer__copyright-link" id="copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><b
+              class="main-footer__copyright-text">Разработано</b>
+            <svg width="27" height="35" viewBox="0 0 27 35" aria-hidden="true" role="img"
+              aria-label="Логотип htmlacademy.">
+              <path fill="currentcolor"
+                d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+            </svg>
+          </a>
+        </div>
       </div>
-    </div>
-  </footer>
-</div>
-<script src="./js/script.js"></script>
+    </footer>
+  </div>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
