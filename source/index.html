@@ -8,11 +8,11 @@
   <meta name="description"
     content="Приезжайте в Седону и вы забудете, что такое Гранд-Каньон.Подробности на нашем сайте.">
   <meta name="Keywords" content="каталог гостиниц, отдых, путешествие, Седона, Гранд-Каньон ">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../favicon.ico">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="./favicon.ico">
   <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/favicon-180.png">
-  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="manifest" href="./manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -77,12 +77,18 @@
 
             <div class="advantages__item-img-wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                srcset="./img/content/sedona-real-city-desktop@1x.webp 1x, ./img/content/sedona-real-city-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/content/sedona-real-city-tablet@1x.webp 1x, ./img/content/sedona-real-city-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="./img/content/sedona-real-city-mobile@1x.webp 1x, ./img/content/sedona-real-city-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)"
-                  srcset="./img/content/sedona-real-city-desktop@1x.jpeg 1x, ./img/content/sedona-real-city-desktop@2x.jpeg 2x">
+                  srcset="./img/content/sedona-real-city-desktop@1x.jpg 1x, ./img/content/sedona-real-city-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                  srcset="./img/content/sedona-real-city-tablet@1x.jpeg 1x, ./img/content/sedona-real-city-tablet@2x.jpeg.jpeg 2x">
-                <img class="advantages__item-img" src="./img/content/sedona-real-city-mobile@1x.jpeg" width="320"
-                  height="260" srcset="./img/content/sedona-real-city-mobile@2x.jpeg 2x"
+                  srcset="./img/content/sedona-real-city-tablet@1x.jpg 1x, ./img/content/sedona-real-city-tablet@2x.jpg.jpg 2x">
+                <img class="advantages__item-img" src="./img/content/sedona-real-city-mobile@1x.jpg" width="320"
+                  height="260" srcset="./img/content/sedona-real-city-mobile@2x.jpg 2x"
                   alt="Вид Седоны, настоящего города.">
               </picture>
             </div>
@@ -114,12 +120,18 @@
             </div>
             <div class="advantages__item-img-wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="./img/content/devil-bridge-desktop@1x.webp 1x, ./img/content/devil-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/content/devil-bridge-tablet@1x.webp 1x, ./img/content/devil-bridge-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/content/devil-bridge-mobile@1x.webp 1x, ./img/content/devil-bridge-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)"
-                  srcset="./img/content/devil-bridge-desktop@1x.jpeg 1x, ./img/content/devil-bridge-desktop@2x.jpeg 2x">
+                  srcset="./img/content/devil-bridge-desktop@1x.jpg 1x, ./img/content/devil-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                  srcset="./img/content/devil-bridge-tablet@1x.jpeg 1x, ./img/content/devil-bridge-tablet@2x.jpeg.jpeg 2x">
-                <img class="advantages__item-img" src="./img/content/devil-bridge-mobile@1x.jpeg" width="320"
-                  height="260" srcset="./img/content/devil-bridge-mobile@2x.jpeg 2x" alt="Мост дьявола.">
+                  srcset="./img/content/devil-bridge-tablet@1x.jpg 1x, ./img/content/devil-bridge-tablet@2x.jpg 2x">
+                <img class="advantages__item-img" src="./img/content/devil-bridge-mobile@1x.jpg" width="320"
+                  height="260" srcset="./img/content/devil-bridge-mobile@2x.jpg 2x" alt="Мост дьявола.">
               </picture>
             </div>
           </li>
@@ -197,7 +209,7 @@
           <a class="copyright__link" id="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <b class="copyright__text">Разработано</b>
             <svg class="copyright__logo-html-academy" width="27" height="35">
-              <use href="./sprite.svg#logo-html-academy"></use>
+              <use href="./img/sprite.svg#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>

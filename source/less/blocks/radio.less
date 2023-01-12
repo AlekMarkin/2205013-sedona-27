@@ -1,5 +1,5 @@
 .radio__label {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -26,7 +26,6 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    display: block;
     background: #000000;
     border-radius: 50%;
     top: 15px;
@@ -43,20 +42,18 @@
   background: #3333334d;
 }
 
-.radio__input[type="radio"]:focus+.radio__label {
-
+.radio__input[type="radio"]:focus + .radio__label {
   &::before {
     background: #e5e5e5;
   }
 }
 
-.radio__input[type="radio"]:active+.radio__label {
-
+.radio__input[type="radio"]:active + .radio__label {
   &::before {
     background: #d5d5d5;
   }
 }
 
-.radio__input:checked+.radio__label::after {
+.radio__input:checked + .radio__label::after {
   display: block;
 }
