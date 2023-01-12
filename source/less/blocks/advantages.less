@@ -41,8 +41,6 @@
   max-width: 247px;
 }
 
-
-
 .advantages__item-img {
   display: block;
   height: 260px;
@@ -56,7 +54,7 @@
 
 .advantages__item--first-type {
   background-color: @bg-color-first-type;
-  color: #ffff;
+  color: #ffffffff;
 
   @media (min-width: @tablet-width) {
     grid-column: 1/4;
@@ -70,7 +68,6 @@
 
   @media (max-width: @mobile-width-only) {
     position: relative;
-
     &::before {
       content: "";
       clip-path: polygon(50% 93%, 113% 63%, -13% 63%);

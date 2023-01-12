@@ -1,5 +1,4 @@
 .feedback-form__container {
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -30,11 +29,10 @@
   @media (min-width: @desktop-width) {
     grid-column-gap: 128px;
   }
-
 }
 
 .feedback-form__item {
-  &:not(:last-child):after {
+  &:not(:last-child)::after {
     content: "";
     height: 1px;
     display: block;
@@ -53,11 +51,9 @@
 }
 
 .feedback-form__item-impression {
-
   @media (min-width: @tablet-width) {
     width: 100%;
     margin-top: 56px;
-
   }
 }
 
@@ -100,7 +96,7 @@
 }
 
 .feedback-form__footnote {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
