@@ -64,8 +64,7 @@
           <header class="feedback__header">
             <h2 class="feedback__header-title">Оставьте свой отзыв</h2>
             <p class="feedback__header__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
-              посещенных
-              вами достопримечательностях.</p>
+              посещенных вами достопримечательностях</p>
           </header>
 
           <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -80,13 +79,13 @@
                     <legend class="personal-data__title">Представьтесь:</legend>
                     <ul class="personal-data__list">
                       <li class="personal-data__item input">
-                        <label class="input__label input__label--personal-data" for="name">Имя<sup>*</sup>:</label>
+                        <label class="input__label input__label--personal-data" for="name">Имя<sup class="input__sup">*</sup>:</label>
                         <input class="input__field input__field--personal-data" type="text" name="name"
                           placeholder="Пётр" id="name" required>
                       </li>
                       <li class="personal-data__item input">
                         <label class="input__label input__label--personal-data"
-                          for="surname">Фамилия<sup>*</sup>:</label>
+                          for="surname">Фамилия<sup class="input__sup">*</sup>:</label>
                         <input class="input__field input__field--personal-data" type="text" name="surname"
                           placeholder="Пустота" id="surname" required>
                       </li>
@@ -100,17 +99,17 @@
                 </div>
 
                 <!-- Contacts-data -->
-                <div class="feedback-form__item feedback-form__item-contacts-data ">
+                <div class="feedback-form__item feedback-form__item-contacts-data">
                   <fieldset class="feedback-form__item-fieldset contacts-data">
                     <legend class="contacts-data__title">Контактная информация:</legend>
                     <ul class="contacts-data__list">
                       <li class="contacts-data__item input">
-                        <label class="input__label input__label--contacts-data" for="phonenumber">Контактный телефон<sup>*</sup>:</label>
+                        <label class="input__label input__label--contacts-data" for="phonenumber">Контактный телефон<sup class="input__sup">*</sup>:</label>
                         <input class="input__field input__field--contacts-data input__field--contacts-data-pnone" type="text" name="phonenumber"
                           placeholder="Введите телефон" id="phonenumber" required>
                       </li>
                       <li class="contacts-data__item input">
-                        <label class="input__label input__label--contacts-data" for="e-mail">Электронная почта<sup>*</sup>:</label>
+                        <label class="input__label input__label--contacts-data" for="e-mail">Электронная почта<sup class="input__sup">*</sup>:</label>
                         <input class="input__field input__field--contacts-data input__field--contacts-data-email" type="text" name="e-mail"
                           placeholder="Введите e-mail" id="e-mail" required>
                       </li>
@@ -191,7 +190,7 @@
             </div>
             <div class="feedback-form__button-wrapper">
               <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
-              <span class="feedback-form__footnote"><sup>*</sup>Обязательные поля</span>
+              <span class="feedback-form__footnote">* — Обязательные поля</span>
             </div>
 
           </form>
@@ -227,7 +226,7 @@
         <div class="main-footer__copyright copyright">
           <a class="copyright__link" id="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <b class="copyright__text">Разработано</b>
-            <svg class="copyright__logo-html-academy" width="27" height="35">
+            <svg class="copyright__logo-html-academy" width="40" height="40">
               <use href="./img/sprite.svg#logo-htmlacademy"></use>
             </svg>
           </a>
@@ -236,23 +235,24 @@
     </footer>
 
     <!-- Modal-->
-    <div class="feedback-form__modal-container">
-    <div class="feedback-form__modal modal modal-success">
+    <div class="modal__container">
+    <div class="modal modal--success">
       <section class="modal__content">
         <h2 class="visually-hidden">Отзыв отправлен</h2>
         <b class="modal__title">Ваш отзыв отправлен!</b>
-        <p class="modal__discription">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+        <p class="modal__description modal__description--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы
           опубликуем его на сайте.</p>
-        <button class="modal__button-success button" type="button">Закрыть окно</button>
+        <button class="modal__button--success button" type="button">Закрыть окно</button>
+
       </section>
     </div>
 
-    <div class="feedback-form__modal modal modal-fail">
+    <div class="modal modal--fail">
       <section class="modal__content">
         <h2 class="visually-hidden">Отзыв не отправлен</h2>
         <b class="modal__title">Что-то пошло не так!</b>
-        <p class="modal__discription">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal__button-fail button" type="button">Ок</button>
+        <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button--fail button" type="button">Ок</button>
       </section>
     </div>
   </div>
