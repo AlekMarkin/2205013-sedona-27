@@ -8,8 +8,9 @@
   gap: 6px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 48px);
+    gap: 6px;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -22,10 +23,6 @@
   align-items: center;
   justify-content: center;
   margin-top: 3px;
-
-  @media (min-width: @tablet-width) {
-    margin-right: 8px;
-  }
 
   &:hover {
     background-color: #669ec0;

@@ -6,12 +6,13 @@
 }
 
 .feedback-form__wrapper {
-    @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     grid-column-gap: 48px;
+    padding-bottom: 15px;
 
     &::before {
       position: absolute;
@@ -22,50 +23,42 @@
       background-color: #e5e5e5;
       top: 0;
       left: 50%;
+      margin-left: -1px;
+
+      @media (min-width: @desktop-width) {
+        margin-left: 13px;
+      }
     }
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-gap: 128px;
+    grid-column-gap: 60px;
   }
 }
 
-// .feedback-form__item {
-//   // &:not(:last-child)::after {
-//   //   content: "";
-//   //   height: 1px;
-//   //   display: block;
-//   //   border-bottom: 1px solid #e5e5e5;
-//   //   margin-top: 20px;
-
-//   //   @media (min-width: @tablet-width) {
-//   //     display: none;
-//   //   }
-//   // }
-
-//   @media (min-width: @tablet-width) {
-//     margin-bottom: 56px;
-//   }
-// }
-
-
 .feedback-form__item-personal-data {
-padding-bottom: 40px;
-margin-bottom: 26px;
-position: relative;
+  padding-bottom: 40px;
+  margin-bottom: 26px;
+  position: relative;
 
   &::after {
     position: absolute;
     content: "";
     height: 1px;
     width: 100%;
-    background:  #e5e5e5;
+    background: #e5e5e5;
     bottom: 0;
 
     @media (min-width: @tablet-width) {
       display: none;
     }
   }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
+
 }
 
 .feedback-form__item-contacts-data {
@@ -75,17 +68,27 @@ position: relative;
 
 
   &::after {
-   position: absolute;
+    position: absolute;
     content: "";
     height: 1px;
     width: 100%;
-    background:  #e5e5e5;
+    background: #e5e5e5;
     bottom: 0;
 
     @media (min-width: @tablet-width) {
       display: none;
     }
-    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 28px;
+  }
+
 }
 
 .feedback-form__item-impression {
@@ -94,42 +97,52 @@ position: relative;
   position: relative;
 
   &::after {
-   position: absolute;
+    position: absolute;
     content: "";
     height: 1px;
     width: 100%;
-    background:  #e5e5e5;
+    background: #e5e5e5;
     bottom: -6px;
 
     @media (min-width: @tablet-width) {
       display: none;
     }
-    }
+  }
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    margin-top: 56px;
+    margin-top: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 57px;
   }
 }
 
 .feedback-form__item-visited-sight {
-margin-top: 32px;
-position: relative;
+  margin-top: 32px;
+  position: relative;
 
-&::after {
-  position: absolute;
-  content: "";
-  height: 1px;
-  width: 100%;
-  background:  #e5e5e5;
-  bottom: -7px;
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #e5e5e5;
+    bottom: -7px;
 
-  @media (min-width: @tablet-width) {
-    display: none;
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
-}
+
   @media (min-width: @tablet-width) {
     width: 100%;
+    margin-top: 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 84px;
   }
 }
 
@@ -138,6 +151,11 @@ position: relative;
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    margin-top: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 71px;
   }
 }
 
@@ -153,6 +171,12 @@ position: relative;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 96px;
   }
 }
 
@@ -162,13 +186,22 @@ position: relative;
   margin: 0 auto;
   max-width: 280px;
   padding: 16px 48px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
 
   @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 27px;
     margin: 0;
+    min-width: 324px;
   }
+
+  @media (min-width: @desktop-width) {
+    min-width: 383px;
+  }
+
 }
 
 .feedback-form__footnote {
@@ -182,6 +215,10 @@ position: relative;
   width: 189px;
   text-align: right;
   margin-left: auto;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 8px;
+  }
 }
-
-

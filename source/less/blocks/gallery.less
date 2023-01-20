@@ -1,5 +1,5 @@
 .gallery__header {
-  padding-top: 36px;
+  padding-top: 39px;
   margin-bottom: 24px;
 
   &::after {
@@ -7,7 +7,7 @@
     height: 1px;
     display: block;
     border-bottom: 1px solid #e5e5e5;
-    margin-top: 28px;
+    margin-top: 35px;
 
     @media (min-width: @tablet-width) {
       display: none;
@@ -29,19 +29,25 @@
 }
 
 .gallery__item {
+  position: relative;
+
   &::after {
     content: "";
     height: 1px;
+    width: 100%;
     display: block;
     border-bottom: 1px solid #e5e5e5;
-    margin-top: 28px;
+    position: absolute;
+    bottom: -27px;
 
     @media (min-width: @tablet-width) {
       display: none;
     }
   }
 
-  margin-bottom: 24px;
+  &:not(:last-child) {
+    margin-bottom: 51px;
+  }
 
   @media (min-width: @tablet-width) {
     &:not(:first-child) {
@@ -131,6 +137,7 @@
 
 .gallery__item-title {
   .padding-margin-none-style();
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
@@ -140,19 +147,21 @@
 .gallery__item-author-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 16px;
+  margin-bottom: 7px;
 }
 
 .gallery__item-author {
   .padding-margin-none-style();
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  margin-right: 5px;
+  margin-right: 3px;
 }
 
 .gallery__item-author-name {
   .padding-margin-none-style();
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -177,7 +186,7 @@
   border-style: hidden;
   cursor: pointer;
   box-sizing: border-box;
-  margin-right: 4px;
+  margin-right: 14px;
 
   &:hover {
     opacity: 0.6;
