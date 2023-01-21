@@ -54,14 +54,18 @@
       <!-- Hero -->
       <section class="hero-second-type">
         <h2 class="visually-hidden">Sedona</h2>
-        <img class="hero-second-type__title" src="./img/title-hero-second-type.svg" alt="Sedona">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/title-hero-second-type--desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/title-hero-second-type--tablet.svg">
+          <img class="hero-second-type__title" src="./img/title-hero-second-type--mobile.svg" width="229" height="39" alt="Sedona">
+        </picture>
       </section>
 
       <!-- Gallery -->
-      <div class="gallery-container">
+      <div class="gallery__container">
         <section class="gallery">
-          <header class="gallery__header section-header">
-            <h2 class="gallery__header-title section-header__title">Фото и видео</h2>
+          <header class="section-header gallery__header">
+            <h2 class="section-header__title gallery__header-title">Фото и видео</h2>
             <p class="section-header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
               забыть о
               политике и экономике.</p>
@@ -145,11 +149,11 @@
                 <a class="gallery__item-link" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="./img/gallery/road-to-north-desktop@1x.webp 1x, ./img/gallery/road-to-north-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="./img/gallery/road-to-north-tablet@1x.webp 1x, ./img/gallery/road-to-north-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="./img/gallery/road-to-north-mobile@1x.webp 1x, ./img/gallery/road-to-north-mobile@2x.webp 2x">
+                      srcset="./img/gallery/road-to-north-desktop@1x.webp 1x, ./img/gallery/road-to-north-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/gallery/road-to-north-tablet@1x.webp 1x, ./img/gallery/road-to-north-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="./img/gallery/road-to-north-mobile@1x.webp 1x, ./img/gallery/road-to-north-mobile@2x.webp 2x">
                     <source media="(min-width: 1200px)"
                       srcset="./img/gallery/road-to-north-desktop@1x.jpg 1x, ./img/gallery/road-to-north-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)"
@@ -180,11 +184,11 @@
                 <a class="gallery__item-link" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="./img/gallery/devil-bridge-desktop@1x.webp 1x, ./img/gallery/devil-bridge-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="./img/gallery/devil-bridge-tablet@1x.webp 1x, ./img/gallery/devil-bridge-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="./img/gallery/devil-bridge-mobile@1x.webp 1x, ./img/gallery/devil-bridge-mobile@2x.webp 2x">
+                      srcset="./img/gallery/devil-bridge-desktop@1x.webp 1x, ./img/gallery/devil-bridge-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/gallery/devil-bridge-tablet@1x.webp 1x, ./img/gallery/devil-bridge-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="./img/gallery/devil-bridge-mobile@1x.webp 1x, ./img/gallery/devil-bridge-mobile@2x.webp 2x">
                     <source media="(min-width: 1200px)"
                       srcset="./img/gallery/devil-bridge-desktop@1x.jpg 1x, ./img/gallery/devil-bridge-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)"
@@ -225,6 +229,7 @@
             <div class="video__preview">
               <button class="video__start-play-button"><span class="visually-hidden">Запустить видео</span></button>
               <video class="video__container" poster="./img/gallery/video-preview-desktop@2x.jpg"></video>
+
             </div>
           </div>
         </section>
@@ -232,7 +237,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="main-footer">
+    <footer class="main-footer main-footer--gallery">
       <div class="main-footer__wrapper">
         <div class="main-footer__hashtag hashtag">
           <p class="hashtag__title">#Visitsedona</p>
@@ -259,7 +264,7 @@
         <div class="main-footer__copyright copyright">
           <a class="copyright__link" id="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <b class="copyright__text">Разработано</b>
-            <svg class="copyright__logo-html-academy" width="27" height="35">
+            <svg class="copyright__logo-html-academy" width="40" height="40">
               <use href="./img/sprite.svg#logo-htmlacademy"></use>
             </svg>
           </a>

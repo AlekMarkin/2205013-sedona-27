@@ -54,7 +54,11 @@
       <!-- Hero -->
       <section class="hero-second-type">
         <h2 class="visually-hidden">Sedona</h2>
-        <img class="hero-second-type__title" src="./img/title-hero-second-type.svg" alt="Sedona">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/title-hero-second-type--desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/title-hero-second-type--tablet.svg">
+          <img class="hero-second-type__title" src="./img/title-hero-second-type--mobile.svg" width="229" height="39" alt="Sedona">
+        </picture>
       </section>
 
       <!-- Review-form -->
