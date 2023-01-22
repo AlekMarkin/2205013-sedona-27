@@ -14,6 +14,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 68px;
+  }
 }
 
 .recomendation-list__item {
@@ -30,7 +34,7 @@
   @media (min-width: @tablet-width) {
     min-width: 256px;
     padding: 0;
-    padding-top: 130px;
+    padding-top: 158px;
   }
 }
 
@@ -42,9 +46,19 @@
   max-width: 284px;
 
   @media (min-width: @tablet-width) {
+    font-size: 21px;
     text-align: center;
     margin: 0 auto;
     display: block;
+    margin-bottom: 23px;
+  }
+}
+
+.recomendation-list__item-food .recomendation-list__title {
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
   }
 }
 
@@ -59,6 +73,16 @@
     max-width: 190px;
     display: block;
     margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 285px;
+  }
+
+  br {
+    @media (max-width: @tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -75,13 +99,26 @@
     left: 18px;
 
     @media (min-width: @tablet-width) {
-      top: 20%;
+      top: 59px;
       left: 50%;
-      margin-left: -38px;
+      margin-left: -39px;
       width: 77px;
       height: 72px;
       background-size: 77px 72px;
+
+      @media (min-width: @desktop-width) {
+        top: 68px;
+        left: 50%;
+        margin-left: -40px;
+        width: 79px;
+        height: 90px;
+        background-size: 78px 75px;
+      }
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 171px;
   }
 }
 
@@ -98,13 +135,26 @@
     left: 18px;
 
     @media (min-width: @tablet-width) {
-      top: 20%;
+      top: 59px;
       left: 50%;
-      margin-left: -38px;
-      width: 77px;
+      margin-left: -40px;
+      width: 78px;
       height: 72px;
-      background-size: 77px 72px;
+      background-size: 78px 72px;
+
+      @media (min-width: @desktop-width) {
+        top: 71px;
+        left: 50%;
+        margin-left: -40px;
+        width: 81px;
+        height: 72px;
+        background-size: 75px 72px;
+      }
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 169px;
   }
 }
 
@@ -121,12 +171,29 @@
     left: 22px;
 
     @media (min-width: @tablet-width) {
-      top: 20%;
+      top: 63px;
       left: 50%;
-      margin-left: -38px;
-      width: 77px;
-      height: 72px;
-      background-size: 77px 72px;
+      margin-left: -31px;
+      width: 67px;
+      height: 74px;
+      background-size: 67px 75px;
     }
+
+    @media (min-width: @desktop-width) {
+      top: 69px;
+      left: 50%;
+      margin-left: -40px;
+      width: 79px;
+      height: 74px;
+      background-size: 76px 75px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 154px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 171px;
   }
 }

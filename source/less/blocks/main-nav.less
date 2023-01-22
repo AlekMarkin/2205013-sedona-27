@@ -15,13 +15,21 @@
   }
 }
 
+.main-nav--closed .main-nav__list {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
 .main-nav--nojs .main-nav__toggle {
   display: none;
 }
 
 .main-nav--nojs .main-nav__list {
-  display: block;
-  margin-top: 90px;
+  @media (max-width: @mobile-width-only) {
+    display: block;
+    margin-top: 90px;
+  }
 }
 
 .main-nav__toggle {
@@ -72,12 +80,6 @@
   display: block;
 
   @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.main-nav--closed .main-nav__list {
-  @media (max-width: @mobile-width-only) {
     display: none;
   }
 }

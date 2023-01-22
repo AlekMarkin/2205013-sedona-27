@@ -4,10 +4,11 @@
   font-size: 18px;
   line-height: 26px;
   display: inline-block;
-  padding-left: 52px;
+  padding-left: 62px;
   position: relative;
   padding-top: 11px;
   cursor: pointer;
+  padding-right: 10px;
 
   &::before {
     content: "";
@@ -51,6 +52,13 @@
 .radio__input[type="radio"]:active + .radio__label {
   &::before {
     background: #d5d5d5;
+  }
+}
+
+// Цвет #ff6347 выбран, чтобы наглядно показать, что критерий disabled выполнен
+.radio__input[type="radio"]:disabled + .radio__label {
+  &::before {
+    background: #ff6347;
   }
 }
 

@@ -4,6 +4,11 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    margin-left: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -76,7 +81,6 @@
   }
 }
 
-/*Padding у ссылки для увеличения области клика*/
 .menu-list__link {
   .font-size-title-style();
   color: #ffffff;

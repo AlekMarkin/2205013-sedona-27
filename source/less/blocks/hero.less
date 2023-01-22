@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   background: #82b3d3 url("../img/backgrounds/hero-background-mobile@1x.jpg") no-repeat center center/cover;
-  padding: 55px 0 85px 0;
+  padding: 90px 0 85px 0;
   min-height: 389px;
   box-sizing: border-box;
 
@@ -44,8 +44,11 @@
 .hero__title {
   display: block;
   margin: 0 auto;
-  min-width: 282px;
-  min-height: 214px;
+
+  @media (min-width: @mobile-width-only) {
+    width: 282px;
+    height: 214px;
+  }
 
   @media (min-width: @tablet-width) {
     min-width: 461px;

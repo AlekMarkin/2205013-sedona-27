@@ -13,17 +13,23 @@
       position: absolute;
       left: 0;
       top: 50%;
+      margin-top: -3px;
       z-index: 1;
     }
   }
 }
 
 .line-wrapper__text {
-  padding-left: 30px;
-  padding-right: 30px;
-  display: inline-block;
-  background-color: #ffffff;
-  position: relative;
-  z-index: 10;
-  max-width: 295px;
+  @media (min-width: @tablet-width) {
+    padding: 0 53px;
+    display: inline-block;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+    max-width: 295px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 65px;
+  }
 }

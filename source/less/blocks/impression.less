@@ -11,23 +11,42 @@
   text-align: center;
   display: inline-block;
   margin: 0 auto;
+  margin-bottom: 18px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 28px;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 44px;
   }
 }
-
 
 .impression__list {
   .list-none-style();
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 294px);
+    column-gap: 2px;
+    margin-left: 36px;
+    row-gap: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 292px);
+    column-gap: 16px;
+    margin-left: 52px;
   }
 }
 
 .impression__item {
-  margin-bottom: 20px;
+  margin-bottom: 26px;
   margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
