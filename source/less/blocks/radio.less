@@ -55,6 +55,13 @@
   }
 }
 
+// Цвет #ff6347 выбран, чтобы наглядно показать, что критерий disabled выполнен
+.radio__input[type="radio"]:disabled + .radio__label {
+  &::before {
+    background: #ff6347;
+  }
+}
+
 .radio__input:checked + .radio__label::after {
   display: block;
 }

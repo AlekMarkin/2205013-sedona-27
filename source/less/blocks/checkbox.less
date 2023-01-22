@@ -1,5 +1,5 @@
 .checkbox__label {
-  font-family: "PT Sans","Arial",sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
@@ -54,6 +54,13 @@
 .checkbox__input[type="checkbox"]:active + .checkbox__label {
   &::before {
     background: #d5d5d5;
+  }
+}
+
+// Цвет #ff6347 выбран, чтобы наглядно показать, что критерий disabled выполнен
+.checkbox__input[type="checkbox"]:disabled + .checkbox__label {
+  &::before {
+    background: #ff6347;
   }
 }
 

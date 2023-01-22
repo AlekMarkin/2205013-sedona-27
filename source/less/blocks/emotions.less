@@ -36,7 +36,6 @@
   resize: none;
   display: block;
   width: 100%;
-  border: none;
   box-sizing: border-box;
   cursor: pointer;
   border: 4px solid #f2f2f2;
@@ -49,7 +48,7 @@
     text-transform: none;
     position: absolute;
     top: 14px;
-      left: 12px;
+    left: 12px;
 
     @media (min-width: @tablet-width) {
       top: 12px;
@@ -59,7 +58,8 @@
 
   &:hover {
     background-color: #e5e5e5;
-      }
+    border: 4px solid #e5e5e5;
+  }
 
   &:focus {
     background-color: #ffffff;
@@ -81,9 +81,7 @@
 }
 
 .emotions__field-wrapper {
-
   @media (min-width: @desktop-width) {
     margin-left: 96px;
   }
-
 }
