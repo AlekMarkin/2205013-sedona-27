@@ -3,7 +3,7 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #ffffffff;
+  color: @bg-color-base;
   background-color: @bg-color-first-type;
   text-decoration: none;
   text-align: center;
@@ -12,15 +12,15 @@
   cursor: pointer;
 
   &:hover {
-    background-color: #669ec0;
+    background-color: @bg-color-third-type;
   }
 
   &:active {
-    background-color: #5496bd;
+    background-color: @bg-color-fourth-type;
     color: rgba(255, 255, 255, 0.3);
   }
 
   &:disabled {
-    background-color: #e5e5e5;
+    background-color: @bg-color-fifth-type;
   }
 }

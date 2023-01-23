@@ -7,7 +7,7 @@
   padding: 0;
   margin: 0;
   height: 100%;
-  background: #f2f2f2;
+  background: @bg-color-eigth-type;
 }
 
 .page__container {
@@ -16,8 +16,8 @@
   min-height: 100%;
   margin-left: auto;
   margin-right: auto;
-  background: #ffffff;
-  color: #000000;
+  background: @bg-color-base;
+  color: @color-black;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 
@@ -26,6 +26,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    box-shadow: 0 5px 15px #00010133;
+    box-shadow: 0 5px 15px @color-shadow;
   }
 }

@@ -32,7 +32,7 @@
 
 .input__field {
   .font-size-title-style();
-  background-color: #f2f2f2;
+  background-color: @bg-color-eigth-type;
   margin-left: 20px;
   margin-right: 20px;
   padding: 18px 16px 15px 16px;
@@ -41,15 +41,19 @@
   border: none;
 
   &:hover {
-    background-color: #e5e5e5;
+    background-color: @bg-color-fifth-type;
   }
 
   &:focus {
-    background-color: #ffffff;
-    border: 4px solid #e5e5e5;
+    background-color: @bg-color-base;
+    border: 4px solid @bg-color-fifth-type;
     outline: none;
     box-sizing: border-box;
     padding: 14px 16px 11px 12px;
+  }
+
+  &:active {
+    background-color: @bg-color-base;
   }
 }
 
@@ -59,7 +63,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
-    color: #000000;
+    color: @color-black;
     text-transform: none;
   }
 
@@ -84,7 +88,7 @@
 }
 
 .input__field--contacts-data-pnone {
-  background-image: url("../img/icons/phone-icon.svg"), linear-gradient(to left, #e6e6e6 58px, transparent 58px);
+  background-image: url("../img/icons/phone-icon.svg"), linear-gradient(to left, @bg-color-twelfth-type 58px, transparent 58px);
   background-repeat: no-repeat;
   background-position: right 20px center, right center;
   padding: 17px 60px 15px 17px;
@@ -105,7 +109,7 @@
 }
 
 .input__field--contacts-data-email {
-  background-image: url("../img/icons/email-icon.svg"), linear-gradient(to left, #e6e6e6 58px, transparent 58px);
+  background-image: url("../img/icons/email-icon.svg"), linear-gradient(to left, @bg-color-twelfth-type 58px, transparent 58px);
   background-repeat: no-repeat;
   background-position: right 20px center, right center;
   position: relative;
