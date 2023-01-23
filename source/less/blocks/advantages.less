@@ -13,6 +13,22 @@
   }
 }
 
+.advantages__header .section-header__title {
+  line-height: 27px;
+  max-width: 280px;
+  padding: 0 31px 0 29px;
+  margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 26px;
+    max-width: 450px;
+    margin-bottom: 28px;
+    text-indent: -3px;
+  }
+}
+
 .advantages__list {
   .list-none-style();
 
@@ -20,7 +36,7 @@
     min-width: 768px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: #eeeeee;
+    background-color: @bg-color-main-type;
   }
 }
 
@@ -90,7 +106,7 @@
 
 .advantages__item--first-type {
   background-color: @bg-color-first-type;
-  color: #ffffffff;
+  color: @bg-color-base;
 
   @media (min-width: @tablet-width) {
     grid-column: 1/4;
@@ -112,7 +128,7 @@
       left: 0;
       width: 100%;
       height: 71px;
-      background-color: #ffffff;
+      background-color: @bg-color-base;
     }
   }
 }
@@ -133,13 +149,13 @@
   }
 }
 
-.advantages__item-first-type--reverse {
+.advantages__item--first-type-reverse {
   @media (min-width: @tablet-width) {
     grid-template-columns: 2fr 1fr;
   }
 }
 
-.advantages__item-first-type--reverse .advantages__item-title {
+.advantages__item--first-type-reverse .advantages__item-title {
   padding-top: 38px;
 
   @media (min-width: @tablet-width) {
@@ -148,7 +164,7 @@
   }
 }
 
-.advantages__item-first-type--reverse .advantages__item-description {
+.advantages__item--first-type-reverse .advantages__item-description {
   margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
@@ -202,14 +218,14 @@
 }
 
 
-.advantages__item-first-type--reverse .advantages__item-img-wrapper {
+.advantages__item--first-type-reverse .advantages__item-img-wrapper {
   @media (min-width: @tablet-width) {
     order: -1;
   }
 }
 
 .advantages__item--second-type {
-  background-color: #eeeeee;
+  background-color: @bg-color-main-type;
   padding-top: 24px;
   padding-bottom: 26px;
   position: relative;
@@ -225,7 +241,7 @@
       right: 0;
       margin: auto;
       height: 1px;
-      background-color: #d6d6d6;
+      background-color: @bg-color-second-type;
       text-align: center;
       display: block;
     }
@@ -237,7 +253,7 @@
   }
 }
 
-.advantages__item-wrapper--square {
+.advantages__item--square {
   @media (min-width: @tablet-width) {
     box-sizing: border-box;
     padding-top: 45px;
